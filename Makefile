@@ -1,4 +1,4 @@
-PROJ_NAME = heat_controller
+PROJ_NAME = Heat_controller
 
 BUILD_DIR = Build
 
