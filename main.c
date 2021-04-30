@@ -14,7 +14,7 @@ int main(void)
         check_status_led=led_init(); 
         if(check_status_led==1)
         {
-            Timer_Initialize();
+            Timer_initialize();
             ADC_Initialize();
             uint16_t temp = 0;
             USART_initialize(103);
