@@ -1,1 +1,1 @@
-# Activity1
+# Embedded C project
