@@ -13,6 +13,4 @@ void ADC_Initialize(void);
  * @return uint16_t 
  */
 uint16_t ReadADC(uint8_t);
-
-
 #endif
