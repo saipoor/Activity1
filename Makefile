@@ -2,34 +2,36 @@ PROJ_NAME = controller
 
 BUILD_DIR = Build
 
-#Source code files
+# All Source code files
 SRC = main.c\
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
 src/activity4.c\
 
-#header file paths
+# All header file paths
 INC = -I inc
 
-#To Find out OS
-ifdef OS
+# Find out the OS and configure the variables accordingly
+ifdef OS	# All configurations for Windwos OS
+# Correct the path based on OS
    FixPath = $(subst /,\,$1)
-#Name of the compiler used
+# Name of the compiler used
    CC = avr-gcc.exe
-#elf to hex file converter used
+# Name of the elf to hex file converter used
    AVR_OBJ_CPY = avr-objcopy.exe
-else #configurations for Linux OS
+else #All configurations for Linux OS
    ifeq ($(shell uname), Linux)
-#Correct the path based on OS
+# Correct the path based on OS
       FixPath = $1				
 # Name of the compiler used
 	  CC = avr-gcc
-#elf to hex file converter used
+# Name of the elf to hex file converter used
 	  AVR_OBJ_CPY = avr-objcopy 
    endif
 endif
 
+# Command to make to consider these names as targets and not as file names in folder
 .PHONY:all analysis clean doc
 
 all:$(BUILD_DIR)
@@ -41,7 +43,7 @@ $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 
 analysis: $(SRC)
-# to Analyse the code using Cppcheck command line utility
+# Analyse the code using Cppcheck command line utility
 	cppcheck --enable=all $^
 
 doc:
@@ -49,6 +51,6 @@ doc:
 	make -C documentation
 
 clean:
-# to Remove the build files
+# Remove all the build files and generated document files
 	rm -rf $(call FixPath,$(BUILD_DIR)/*)
-        make -C documentation clean
+	make -C documentation clean
