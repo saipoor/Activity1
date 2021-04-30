@@ -1,6 +1,7 @@
 #include "activity2.h"
 #include <util/delay.h>
 #include <avr/io.h>
+#include<avrio.h>
 
 void ADC_initialize()
 {
