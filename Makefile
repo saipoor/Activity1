@@ -3,7 +3,7 @@ PROJ_NAME = heat_controller
 BUILD_DIR = Build
 
 #Source code files
-SRC = project_main.c\
+SRC = main.c\
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
