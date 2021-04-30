@@ -44,6 +44,11 @@ analysis: $(SRC)
 # to Analyse the code using Cppcheck command line utility
 	cppcheck --enable=all $^
 
+doc:
+# Build the code code documentation using Doxygen command line utility
+	make -C documentation
+
 clean:
 # to Remove the build files
 	rm -rf $(call FixPath,$(BUILD_DIR)/*)
+        make -C documentation clean
