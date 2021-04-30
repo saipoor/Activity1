@@ -13,5 +13,4 @@ void port_initialize(void);
  * @return int 
  */
 int led_initialize(void);
-
 #endif
