@@ -6,7 +6,7 @@
  * 
  * 
  */
-void ADC_Initialize(void);
+void ADC_initialize(void);
 /**
  * @brief Reads input from one of the channel
  * 
