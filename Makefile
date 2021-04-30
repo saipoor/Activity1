@@ -45,5 +45,5 @@ analysis: $(SRC)
 	cppcheck --enable=all $^
 
 clean:
-# to Remove the build files and generated document files
+# to Remove the build files
 	rm -rf $(call FixPath,$(BUILD_DIR)/*)
