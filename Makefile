@@ -1,9 +1,9 @@
-PROJ_NAME = Heat_controller
+PROJ_NAME = main.c
 
 BUILD_DIR = Build
 
 #Source code files
-SRC = main.c\
+SRC =
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
