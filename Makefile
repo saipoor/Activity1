@@ -1,9 +1,9 @@
-PROJ_NAME = main.c
+PROJ_NAME = controller
 
 BUILD_DIR = Build
 
 #Source code files
-SRC =
+SRC = main.c\
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
