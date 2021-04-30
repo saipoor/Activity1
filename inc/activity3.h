@@ -5,7 +5,7 @@
  * @brief Timer intialisation
  * 
  */
-void Timer_Initialize(void);
+void Timer_initialize(void);
 /**
  * @brief Generation of pulsewm
  * 
