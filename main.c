@@ -11,11 +11,11 @@ int main(void)
     {
         port_initialize(); 
         int check_status_led=0;
-        check_status_led=led_init(); 
+        check_status_led=led_initialize(); 
         if(check_status_led==1)
         {
             Timer_initialize();
-            ADC_Initialize();
+            ADC_initialize();
             uint16_t temp = 0;
             USART_initialize(103);
 			temp = ReadADC(0);
