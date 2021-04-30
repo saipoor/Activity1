@@ -14,4 +14,4 @@ void port_initialize(void);
  */
 int led_initialize(void);
 
-#endif // ACTIVITY1_H_INCLUDED
+#endif
