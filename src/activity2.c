@@ -2,7 +2,7 @@
 #include <util/delay.h>
 #include <avr/io.h>
 
-void ADC_Initialize()
+void ADC_initialize()
 {
     ADMUX=(1<<REFS0);//when AREF and AVCC equals 5v
     ADCSRA=(1<<ADEN) | (7<<ADPS0); 
